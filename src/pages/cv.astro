@@ -1,0 +1,22 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Projects from "../sections/resume/Projects.astro";
+import WorkExperience from "../sections/resume/WorkExperience.astro"
+import Education from "../sections/resume/Education.astro"
+import Social from "../sections/resume/Social.astro";
+import Sidebar from "../sections/resume/Sidebar.astro";
+---
+<MainLayout>
+	<div class="container mx-auto max-w-6xl">
+		<div class="grid grid-cols-1 md:grid-cols-12">
+		 	<Sidebar/>
+
+			<div class="mx-auto max-w-2xl space-y-16 p-5 md:col-span-8 md:p-10">
+				<WorkExperience/>
+				<Education/>
+				<Projects/>
+				<Social/>
+			</div>			
+		</div>
+	</div>	
+</MainLayout>

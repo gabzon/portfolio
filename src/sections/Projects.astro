@@ -1,0 +1,171 @@
+---
+import LinkIcon from "../icons/LinkIcon.astro"
+import { Image } from 'astro:assets';
+import corazon from "../assets/images/corazon-logo.png"
+import sevinci from "../assets/images/sevinci.png"
+import dancefloor from "../assets/images/dancefloor.png"
+import hotelis from "../images/hotelis-icon.png"
+import allegromusique from "../images/allegromusique.png"
+import spoutnik from "../images/spoutnik.png"
+import manon from "../images/manon.png"
+---
+<div class="relative px-4 sm:px-8 lg:px-12">
+    <div class="mx-auto max-w-2xl lg:max-w-5xl">
+        <header class="max-w-2xl">
+            <h1 class="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+                Things I’ve made trying to put my dent in the universe.
+            </h1>
+            <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+                I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved.
+            </p>
+        </header>
+        <div class="mt-16 sm:mt-20">
+            <ul role="list" class="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
+                <li class="group relative flex flex-col items-start">
+                    <div class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+                        <Image src={corazon} width="32" height="32" alt="Corazon Dance logo" class="rounded-full object-cover h-8 w-8" style="color:transparent"/>
+                    </div>
+                    <h2 class="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
+                        <div class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl dark:bg-zinc-800/50">
+                        </div>
+                        <a href="https://corazon.dance" target="_blank">
+                            <span class="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
+                            <span class="relative z-10">Corazon Dance</span>
+                        </a>
+                    </h2>
+                    <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+                        Corazon Dance is a web platform that helps people find physical activities in their city.
+                    </p>
+                    <p class="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-red-500 dark:text-zinc-200">
+                        <LinkIcon />
+                        <span class="ml-2">corazon.dance</span>
+                    </p>
+                </li>
+                <li class="group relative flex flex-col items-start">
+                    <div class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+                        <Image src={sevinci} width="32" height="32" alt="Sevinci logo" class="rounded-full object-cover h-8 w-8" style="color:transparent"/>
+                    </div>
+                    <h2 class="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
+                        <div class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl dark:bg-zinc-800/50">
+                        </div>
+                        <a href="https://sevinci.com" target="_blank">
+                            <span class="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
+                            <span class="relative z-10">Sevinci</span>
+                        </a>
+                    </h2>
+                    <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+                        Sevinci is a innovation and automation agency focused on simplifying processes and increasing efficiency.
+                    </p>
+                    <p class="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-red-500 dark:text-zinc-200">
+                        <LinkIcon />
+                        <span class="ml-2">Sevinci Sàrl</span>
+                    </p>
+                </li>
+                <li class="group relative flex flex-col items-start">
+                    <div class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+                        <Image src={hotelis} width="32" height="32" alt="Sevinci logo" class="rounded-full object-cover h-8 w-8" style="color:transparent"/>
+                    </div>
+                    <h2 class="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
+                        <div class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl dark:bg-zinc-800/50">
+                        </div>
+                        <a href="https://www.hotelis.hr/en/" target="_blank">
+                            <span class="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
+                            <span class="relative z-10">Hotelis</span>
+                        </a>
+                    </h2>
+                    <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+                        Hotelis is an independent consulting firm specializing in hotel and tourism investments.
+                    </p>
+                    <p class="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-red-500 dark:text-zinc-200">
+                        <LinkIcon />
+                        <span class="ml-2">hotelis.hr</span>
+                    </p>
+                </li>
+
+                <li class="group relative flex flex-col items-start">
+                    <div class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+                        <Image src={manon} width="32" height="32" alt="Sevinci logo" class="rounded-full object-cover h-8 w-8" style="color:transparent"/>
+                    </div>
+                    <h2 class="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
+                        <div class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl dark:bg-zinc-800/50">
+                        </div>
+                        <a href="https://manonthomaspavlowsky.ch/" target="_blank">
+                            <span class="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
+                            <span class="relative z-10">Manon Thomas Pavlowsky</span>
+                        </a>
+                    </h2>
+                    <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+                        Independent artist specializing in object design and scenography with more than 8 years of experience.
+                    </p>
+                    <p class="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-red-500 dark:text-zinc-200">
+                        <LinkIcon />
+                        <span class="ml-2">manonthomaspavlowsky.ch</span>
+                    </p>
+                </li>
+
+                <li class="group relative flex flex-col items-start">
+                    <div class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+                        <Image src={dancefloor} width="32" height="32" alt="Dancefloor logo" class="rounded-full object-cover h-8 w-8" style="color:transparent"/>
+                    </div>
+                    <h2 class="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
+                        <div class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl dark:bg-zinc-800/50">
+                        </div>
+                        <a href="https://www.dancefloorgenevasalsa.ch/" target="_blank">
+                            <span class="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
+                            <span class="relative z-10">Dancefloor</span>
+                        </a>
+                    </h2>
+                    <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+                        Afro Latin and urban styles dance school and dance company with over 10 years of experience. 
+                    </p>
+                    <p class="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-red-500 dark:text-zinc-200">
+                        <LinkIcon />
+                        <span class="ml-2">dancefloorgenevasalsa.ch</span>
+                    </p>
+                </li>
+
+                <li class="group relative flex flex-col items-start">
+                    <div class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+                        <Image src={spoutnik} width="32" height="32" alt="Dancefloor logo" class="rounded-full object-cover h-8 w-8" style="color:transparent"/>
+                    </div>
+                    <h2 class="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
+                        <div class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl dark:bg-zinc-800/50">
+                        </div>
+                        <a href="https://spoutnik.info/" target="_blank">
+                            <span class="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
+                            <span class="relative z-10">Spoutnik Cinema</span>
+                        </a>
+                    </h2>
+                    <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+                        Independent cinema and event planner focus in the city of Geneva, Switzerland
+                    </p>
+                    <p class="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-red-500 dark:text-zinc-200">
+                        <LinkIcon />
+                        <span class="ml-2">spoutnik.info/</span>
+                    </p>
+                </li>
+
+                <li class="group relative flex flex-col items-start">
+                    <div class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+                        <Image src={allegromusique} width="32" height="32" alt="Dancefloor logo" class="rounded-full object-cover h-8 w-8" style="color:transparent"/>
+                    </div>
+                    <h2 class="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
+                        <div class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl dark:bg-zinc-800/50">
+                        </div>
+                        <a href="https://allegromusique.ch/" target="_blank">
+                            <span class="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
+                            <span class="relative z-10">Allegro musique</span>
+                        </a>
+                    </h2>
+                    <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+                        Summer Camp, outdoor centers for Artistic Holidays. For children aged 3 to 10, thematic weeks and shows.
+                    </p>
+                    <p class="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-red-500 dark:text-zinc-200">
+                        <LinkIcon />
+                        <span class="ml-2">allegromusique.ch/</span>
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

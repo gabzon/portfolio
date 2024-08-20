@@ -1,0 +1,46 @@
+---
+import Header from "./Header.astro"
+import Footer from "./Footer.astro"
+---
+
+<!DOCTYPE html>
+<html lang="en" class="h-full antialiased light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Zambrano</title>
+    <script is:inline>
+        // The configured mode is stored in local storage
+        const isDarkMode = localStorage.getItem('theme');
+        
+        // Set theme to 'dark' if darkMode = 'true'
+        const themeMode = isDarkMode === 'true' ? 'dark' : '';
+    
+        // Put dark class on html tag to enable dark mode
+        document.querySelector("html").className = themeMode;
+    
+      </script>
+</head>
+<body class="flex h-full bg-zinc-50 dark:bg-black">
+    <div class="flex w-full">
+        <div class="fixed inset-0 flex justify-center sm:px-8">
+            <div class="flex w-full max-w-7xl lg:px-8">
+              <div class="w-full bg-white ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20" />
+            </div>
+        </div>
+        <div class="relative flex w-full flex-col">
+            <script is:inline>
+                const theme = localStorage.getItem("theme") || "dark";
+                document.documentElement.dataset.theme = theme;
+              </script>
+            <Header/>
+              <main class="flex-auto">
+                  <slot/>
+              </main>
+            <Footer/>
+        </div>
+    </div>
+    <script src="../../node_modules/preline/dist/preline.js"></script>
+</body>
+</html>
+

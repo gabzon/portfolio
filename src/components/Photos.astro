@@ -1,0 +1,69 @@
+---
+import { Image } from 'astro:assets';
+import fitness from '../images/fitness.jpg';
+import meditation from '../images/meditation.jpg';
+import judo from '../images/judo.jpg';
+import yoga from '../images/yoga.jpg';
+import dance from '../images/dance.jpg';
+---
+<div class="mt-16 sm:mt-20">
+    <div class="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
+        <div class="group relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800 rotate-2">
+            <Image src={fitness} class="group-hover:scale-105 transition-transform duration-500 ease-in-out size-full absolute inset-0 h-full w-full object-cover" decoding="async" data-nimg="1" loading="lazy" alt="fitness" style="color: transparent;"/>
+            <div class="absolute inset-0 flex items-center justify-center transition duration-300 ease-in-out group-hover:bg-black/30">
+                <div class="px-4 md:px-5">
+                    <h3 class="text-lg font-bold text-transparent group-hover:text-white transition duration-300 ease-in-out">
+                        Fitness centers
+                    </h3>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="group relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800 -rotate-2">
+            <Image src={dance} class="group-hover:scale-105 transition-transform duration-500 ease-in-out size-full absolute inset-0 h-full w-full object-cover" decoding="async" data-nimg="1" loading="lazy" alt="tango" style="color: transparent;"/>
+            <div class="absolute inset-0 flex items-center justify-center transition duration-300 ease-in-out group-hover:bg-black/30">
+                <div class="px-4 md:px-5">
+                    <h3 class="text-lg font-bold text-transparent group-hover:text-white transition duration-300 ease-in-out">
+                        Dance schools
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="group relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800 rotate-2">
+            <Image src={yoga} class="group-hover:scale-105 transition-transform duration-500 ease-in-out size-full absolute inset-0 h-full w-full object-cover" decoding="async" data-nimg="1" loading="lazy" alt="yoga" style="color: transparent;"/>
+            <div class="absolute inset-0 flex items-center justify-center transition duration-300 ease-in-out group-hover:bg-black/30">
+                <div class="px-4 md:px-5">
+                    <h3 class="text-lg font-bold text-transparent group-hover:text-white transition duration-300 ease-in-out">
+                        Yoga & Pilates studios
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="group relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800 rotate-2">
+            <Image src={judo} class="group-hover:scale-105 transition-transform duration-500 ease-in-out size-full absolute inset-0 h-full w-full object-cover" decoding="async" data-nimg="1" loading="lazy" alt="judo" style="color: transparent;"/>
+            <div class="absolute inset-0 flex items-center justify-center transition duration-300 ease-in-out group-hover:bg-black/30">
+                <div class="px-4 md:px-5">
+                    <h3 class="text-lg font-bold text-transparent group-hover:text-white transition duration-300 ease-in-out">
+                        Sports clubs
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="group relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800 -rotate-2">
+            <Image src={meditation} class="group-hover:scale-105 transition-transform duration-500 ease-in-out size-full absolute inset-0 h-full w-full object-cover" decoding="async" data-nimg="1" loading="lazy" alt="meditation" style="color: transparent;"/>
+            <div class="absolute inset-0 flex items-center justify-center transition duration-300 ease-in-out group-hover:bg-black/30">
+                <div class="px-4 md:px-5">
+                    <h3 class="text-lg font-bold text-transparent group-hover:text-white transition duration-300 ease-in-out">
+                        Wellness centers
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="relative bg-white border shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
+	<img class="w-full h-auto rounded-xl" src="https://images.unsplash.com/photo-1680868543815-b8666dba60f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2532&q=80" alt="Image Description">
+
+  </div> -->
